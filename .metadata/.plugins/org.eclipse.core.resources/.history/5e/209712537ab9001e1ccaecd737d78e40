@@ -1,0 +1,46 @@
+package Clase5.Utilidades;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+
+public class Utilidades {
+	public static Object[][] readFromExcelFile(String ruta, String nombreHoja) throws Exception {
+		FileInputStream file = new FileInputStream(new File(ruta));
+		
+		XSSFWorkbook excelFile = new XSSFWorkbook(file);
+		XSSFSheet sheet = excelFile.getSheet(nombreHoja);
+		
+		System.out.println(nombreHoja);
+		
+		XSSFRow row;
+		
+		int rows = sheet.getPhysicalNumberOfRows();
+		int column = sheet.getRow(0).getPhysicalNumberOfCells();
+		
+		Object cellValue[][]=new Object[rows][column];
+		
+		for (int r = 0; r < rows; r++) {
+			row = sheet.getRow(r);
+			if (row == null){ 
+				break; 
+			}else{ 
+				for (int c = 0; c < column; c++) {
+					DataFormatter dataFormatter = new DataFormatter();
+					cellValue[r][c] = dataFormatter.formatCellValue(sheet.getRow(r).getCell(c));
+					
+				} 
+				
+			}
+			
+	   }
+	   excelFile.close();
+	   return cellValue; 
+	
+    }
+}

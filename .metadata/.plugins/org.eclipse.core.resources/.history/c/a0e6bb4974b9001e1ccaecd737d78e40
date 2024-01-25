@@ -1,0 +1,16 @@
+package Clase5.dataProvider;
+
+import org.testng.annotations.DataProvider;
+
+public class dataProviderExample {
+    @DataProvider (name="validLogin")
+    public Object[][] personas() {
+        return new Object[][]{
+        	    //{"usuario", "password"}
+                {"franperez@gmail.com", "franperez2010"},
+                {"fabianasuarez@gmail.com", "fabi3310"},
+                {"juansotoarias@gmail.com", "qwer159"}
+
+        };
+    }
+}

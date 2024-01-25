@@ -1,0 +1,35 @@
+package Clase5;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class EtapaCuatro_Cuatro {
+	String url = "http://www.automationpractice.pl/";
+	@Test
+	public void Ej1_2() throws InterruptedException {
+		WebDriver driver;
+		driver = new ChromeDriver();
+		
+		driver.get(url);
+		System.out.println(driver.getTitle());
+		
+		driver.close();
+		
+	}
+	@Test
+	public void prueba() {
+		String[] array = {"a", "b"};
+		System.out.println(array[0]);
+		
+		String[][] arrayOfArray = {
+				{"a", "b"},
+				{"x", "h"}
+		};
+		System.out.println(arrayOfArray[1][1]);
+		
+	}
+}

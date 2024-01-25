@@ -1,0 +1,9 @@
+package clase4;
+
+public enum TiposDeNavegador {
+    CHROME("chrome"), EDGE, FIREFOX;
+
+	TiposDeNavegador(String string) {
+		// TODO Auto-generated constructor stub
+	}
+}

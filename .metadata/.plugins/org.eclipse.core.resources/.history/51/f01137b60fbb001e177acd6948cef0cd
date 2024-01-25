@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="clase3.RegistroEjemplo"/>
+      <class name="Clase5.ManejoDeAlertas"/>
+      <class name="clase3.Anotaciones"/>
+      <class name="clase2.Esperas"/>
+      <class name="clase2.Desafio1"/>
+      <class name="clase4.Ejemplo"/>
+      <class name="clase6.Database"/>
+      <class name="Clase5.EjemplosListaArreglos"/>
+      <class name="Clase5.UploadFiles"/>
+      <class name="Clase5.test.InicioSesion"/>
+      <class name="clase4.BaseTest"/>
+      <class name="Clase5.ManejoTablas"/>
+      <class name="clase1.Uno_uno"/>
+      <class name="clase3.BaseTest"/>
+      <class name="clase2.ListaDesplegable"/>
+      <class name="clase4.EtapaCuatro_Cuatro"/>
+      <class name="clase4.CrossBrowserTest"/>
+      <class name="clase3.Tres_Uno"/>
+      <class name="clase2.Dos_uno"/>
+      <class name="clase2.LocalizadoresSelenium"/>
+      <class name="Clase5.DownloadFiles"/>
+      <class name="clase4.Cuatro_Uno"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

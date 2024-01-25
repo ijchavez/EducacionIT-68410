@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-25T19:35:46 ART" name="Suite" finished-at="2024-01-25T19:36:31 ART" duration-ms="44666">
+    <groups>
+    </groups>
+    <test started-at="2024-01-25T19:35:46 ART" name="Test" finished-at="2024-01-25T19:36:31 ART" duration-ms="44666">
+      <class name="clase3.Tres_Uno">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:clase3.Tres_Uno@6b26e945]" started-at="2024-01-25T19:35:46 ART" name="setUp" finished-at="2024-01-25T19:35:46 ART" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="irUrl()[pri:0, instance:clase3.Tres_Uno@6b26e945]" started-at="2024-01-25T19:35:46 ART" name="irUrl" finished-at="2024-01-25T19:35:56 ART" duration-ms="9363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- irUrl -->
+        <test-method signature="invalidRegistrationTest()[pri:0, instance:clase3.Tres_Uno@6b26e945]" started-at="2024-01-25T19:35:56 ART" name="invalidRegistrationTest" finished-at="2024-01-25T19:36:02 ART" duration-ms="6312" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[El texto no es correcto expected [password is required.] but found [passwd is required.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: El texto no es correcto expected [password is required.] but found [passwd is required.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at clase3.Tres_Uno.invalidRegistrationTest(Tres_Uno.java:127)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidRegistrationTest -->
+        <test-method is-config="true" signature="screenshot(org.testng.ITestContext)[pri:0, instance:clase3.Tres_Uno@6b26e945]" started-at="2024-01-25T19:36:02 ART" name="screenshot" finished-at="2024-01-25T19:36:02 ART" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@234ce7ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="irUrl()[pri:0, instance:clase3.Tres_Uno@6b26e945]" started-at="2024-01-25T19:36:02 ART" name="irUrl" finished-at="2024-01-25T19:36:10 ART" duration-ms="7585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- irUrl -->
+        <test-method signature="registrationTest()[pri:0, instance:clase3.Tres_Uno@6b26e945]" started-at="2024-01-25T19:36:10 ART" name="registrationTest" finished-at="2024-01-25T19:36:31 ART" duration-ms="20844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationTest -->
+        <test-method is-config="true" signature="screenshot(org.testng.ITestContext)[pri:0, instance:clase3.Tres_Uno@6b26e945]" started-at="2024-01-25T19:36:31 ART" name="screenshot" finished-at="2024-01-25T19:36:31 ART" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@234ce7ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshot -->
+        <test-method is-config="true" signature="finSuitePruebas()[pri:0, instance:clase3.Tres_Uno@6b26e945]" started-at="2024-01-25T19:36:31 ART" name="finSuitePruebas" finished-at="2024-01-25T19:36:31 ART" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finSuitePruebas -->
+      </class> <!-- clase3.Tres_Uno -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

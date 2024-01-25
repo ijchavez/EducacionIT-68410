@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite de Registro de usuarios">
+  <test thread-count="5" name="Search Item chrome">
+  <parameter name="navegador" value="chrome" />
+    <classes>
+      <class name="clase4.CrossBrowserTest">
+		<methods>
+          <include name="searchItem"/>
+      	</methods>
+	  </class>
+    </classes>
+  </test> 
+  <test thread-count="5" name="Search Item firefox">
+  <parameter name="navegador" value="firefox" />
+    <classes>
+      <class name="clase4.CrossBrowserTest">
+		<methods>
+          <include name="searchItem"/>
+
+      </methods>
+	  </class>
+    </classes>
+  </test>
+
+ <!-- Test --><!-- Test -->
+</suite> <!-- Suite -->

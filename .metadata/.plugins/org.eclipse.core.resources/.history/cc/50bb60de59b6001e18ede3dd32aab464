@@ -1,0 +1,38 @@
+package clase4;
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+import clase4.pages.LandingPage;
+import clase4.pages.LoginPage;
+import java.time.Duration;
+
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
+
+
+
+public class Cuatro_Uno extends BaseTest{
+	@Test
+	public void registrationTest(){
+		LandingPage landingPage = new LandingPage(driver);
+		//Landing Page 
+		WebElement loginLink = landingPage.getLoginLink();
+		loginLink.click();
+		
+		LoginPage loginPage = new LoginPage(driver);
+		//LoginPage
+		
+		WebElement titleTextForm = loginPage.getTextTitleForm();
+		String titleTextFormText = titleTextForm.getText();
+		
+		Assert.assertEquals(titleTextFormText, "AUTHENTICATION", "El texto no es el esperado");
+		
+
+		
+	}
+
+
+}

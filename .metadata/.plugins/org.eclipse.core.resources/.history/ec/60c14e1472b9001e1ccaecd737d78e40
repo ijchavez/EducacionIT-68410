@@ -1,0 +1,38 @@
+package Clase5;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class EjemplosListaArreglos {
+	@Test
+	public void arreglosUniBiDimensionales() {
+		String[] array = {"a", "b"};
+		System.out.println(array[0]);
+		
+		String[][] arrayOfArray = {
+				{"a", "b"},
+				{"x", "h"}
+		};
+		System.out.println(arrayOfArray[1][1]);
+		
+	}
+	@Test
+	public void listas() {
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://seleniumjavalocators.neocities.org/");
+		
+		List<WebElement> parrafos = driver.findElements(By.tagName("p"));
+		//primer webelement parrafo
+		//WebElement primerParrafoElement = parrafos.get(0);
+		//string del primer parrafo
+		String primerParrafo = parrafos.get(0).getText();
+
+		System.out.println(primerParrafo);
+		driver.close();
+	}
+}
