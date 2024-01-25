@@ -26,16 +26,9 @@ public class CapabilitiesExample {
 		
 	}
 	@Test
-	public void searchTshirtItem() {
+	public void searchItem() {
 		WebElement searchInput = driver.findElement(By.id("search_query_top"));
 		searchInput.sendKeys("T-shirt");
-		searchInput.sendKeys(Keys.ENTER);
-		
-	}
-	@Test
-	public void searchDressItem() {
-		WebElement searchInput = driver.findElement(By.id("search_query_top"));
-		searchInput.sendKeys("dress");
 		searchInput.sendKeys(Keys.ENTER);
 		
 	}
