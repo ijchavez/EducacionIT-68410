@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Clase5.ManejoDeAlertas">
+      <class name="clase6.CambiosSelenium4">
         <methods>
-          <include name="alertasConEsperaTest"/>
           <include name="tearDown"/>
-          <include name="init"/>
+          <include name="searchTshirtItem"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- Clase5.ManejoDeAlertas -->
+      </class> <!-- clase6.CambiosSelenium4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

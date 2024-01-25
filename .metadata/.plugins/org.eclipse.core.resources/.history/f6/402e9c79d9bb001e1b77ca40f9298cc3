@@ -1,0 +1,35 @@
+package clase6;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
+
+public class CambiosSelenium4 {
+	WebDriver driver;
+	String url = "https://seleniumjavalocators.neocities.org/";
+	
+	@BeforeTest
+	public void setUp() {
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("start-maximized");
+		//options.addArguments("incognito");
+		//no inicializa el navegador de forma visual.
+		//options.addArguments("headless");
+		driver = new ChromeDriver(options);
+    	driver.get(url);
+		
+	}
+	@Test
+	public void searchTshirtItem() {
+		WebElement loginLink = driver.findElement(By.id("loginLink"));
+		WebElement locatorRelativo = driver.findElement(with(By.tagName("a")).toRightOf(loginLink);
+		System.out.print(locatorRelativo.getText());
+		
+	}
+}
