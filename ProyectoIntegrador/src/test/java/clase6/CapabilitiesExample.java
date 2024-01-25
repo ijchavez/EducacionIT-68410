@@ -17,10 +17,10 @@ public class CapabilitiesExample {
 	@BeforeTest
 	public void setUp() {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("start-maximized");
-		options.addArguments("incognito");
+		//options.addArguments("start-maximized");
+		//options.addArguments("incognito");
 		//no inicializa el navegador de forma visual.
-		//options.addArguments("headless");
+		options.addArguments("headless");
 		driver = new ChromeDriver(options);
     	driver.get(url);
 		
